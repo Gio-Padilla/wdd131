@@ -1,0 +1,62 @@
+* {
+	margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* This is for the varibles*/
+    --dark-gray: rgb(78, 78, 78);
+}
+
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+header {
+    display: grid;
+    grid-column-start: span 2;
+    background-color: var(--dark-gray);
+    color: white;
+    min-height: 10rem;
+}
+
+header p {
+    padding: 1rem;
+}
+
+main {
+    background-color: lightgray;
+    padding: 1rem;
+    min-height: 10rem;
+}
+
+aside {
+    padding: 1rem;
+    min-height: 10rem;
+}
+
+footer {
+    grid-column-start: span 2;
+    background-color: var(--dark-gray);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    min-height: 10rem;
+}
+
+header nav {
+    align-self: end;
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+}
