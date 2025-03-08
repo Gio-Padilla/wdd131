@@ -3,9 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131 - Giovaughni Padilla</title>
+    <title>WDD 131 – Dynamic Web Fundamentals - Giovaughni Padilla</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals - Giovaughni Padilla - A home page for this course I am taking online at BYU Pathways.">
+    <meta name="author" content="Giovaughni Padilla">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-    <h1>Test</h1>
+    <header>
+        <h1>WDD 131: Dynamic Web Fundamentals - Giovaughni Padilla</h1>
+        <nav>
+            <a href="https://www.linkedin.com/in/giovaughni-padilla-aa37612ba/" target="_blank">LinkedIn</a>
+            <a href="https://byupw.instructure.com/" target="_blank">Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/2-ne/9?lang=eng&id=p18#p18" target="_blank">Scripture</a>
+            <a href="#">Final Project</a>
+        </nav>
+    </header>
+    <main>
+        <section class="card" id="about-me">
+            <h2>About Me</h2>
+            <img src="images/profile.jpg" alt="Profile Photo" id="profile-photo">
+            <p>Hello! My name is Giovaughni Padilla but I go by Gio. While for the most part, I grew up in Coeur d'Alene, ID and Payson, AZ, I now live in Omaha, NE with my wife. I enjoy being hands on with crafts and projects. I own a 3d printer where I enjoy designing things that I can 3d print. I want to be able to further my education in order to gain a new job that I can enjoy and turn into a career.</p>
+            <h3>Omaha, Nebraska</h3>
+            <img src="images/omaha-city.jpg" alt="Omaha City" id="city-photo">
+            <p>Omaha, Nebraska, is a vibrant city on the Missouri River known for its rich pioneer history, lively arts scene, and famous zoo, the Henry Doorly Zoo and Aquarium. It’s home to a diverse range of neighborhoods, historic sites, and a rapidly growing tech industry, blending Midwestern charm with modern urban amenities.</p>
+        </section>
+        <section class="card">
+            <h2>Web Dev Resources</h2>
+            <ul>
+                <li>Dev.to Community</li>
+                <li>Smashing Magazine</li>
+                <li>CSS Tricks</li>
+                <li>W3 Schools</li>
+                <li>Udemy</li>
+                <li>Image Placeholder</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>© <span id="currentYear"></span> || Giovaughni Padilla || Nebraska, United States</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
 </body>
 </html>
