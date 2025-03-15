@@ -1,0 +1,17 @@
+@media screen and (min-width: 600px) {
+    #menu-toggle {
+        display: none; 
+    }
+
+    nav {
+        display: flex; /* It makes sure to show the menu even when it is hidden */
+        flex-direction: row; /* Display as row since it is normally a column */
+        gap: 0.5rem;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        background: none; /* Remove background so that it uses the default heading color */
+        width: auto;
+        padding: 0;
+    }
+}

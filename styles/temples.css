@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: rgb(21, 65, 21);
+    --secondary-color: rgb(29, 29, 29);
+    --accent-color: rgb(127, 214, 101);
+}
+
+h1, p {
+    font-family: "Afacad Flux", sans-serif;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* I had to mess arround with a few things and found that this creats a responsive layout even when the screen changes size without having to change this property */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    justify-content: space-between;
+}
+
+/* This is just some specifications in order to make sure the grid works */
+figure {
+    justify-self: center;
+    max-width: 300px;
+    min-width: 200px;
+    text-align: center;
+    padding: 1rem;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+main h1 {
+    text-align: center;
+    color: var(--secondary-color);
+}
+
+a {
+    text-decoration: none;
+    font-family: "Oswald", sans-serif;
+}
+
+header {
+    background-color: var(--primary-color);
+    padding: 1rem;
+    position: relative;
+}
+
+header h1 {
+    color: white;
+}
+
+footer {
+    background-color: var(--primary-color);
+    padding: 1rem;
+}
+
+footer p {
+    color:  white;
+    padding: 0.2rem;
+    text-align: center;
+}
+
+#menu-toggle {
+    display: block; /* Shows hamburger */
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+nav a {
+    color: white;
+    padding: 0.5rem 1rem;
+    background: none;
+}
+
+nav a:hover {
+    color: var(--accent-color);
+    background-color: var(--secondary-color);
+    border-radius: 1rem;
+}
+
+nav {
+    display: none; /* Hide navigation menu by default on small screens */
+    flex-direction: column;
+    position: absolute;
+    top: 4rem;
+    right: 1rem;
+    background-color: var(--primary-color);
+    width: 150px;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+/* Show menu when toggled */
+nav.show {
+    display: flex;
+}
+
+#menu-toggle.show:hover {
+    color: red;
+}
