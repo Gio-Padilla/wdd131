@@ -1,0 +1,65 @@
+* {
+	margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* This is for the varibles */
+    --primary-color: rgb(156, 0, 0);
+    --secondary-color: rgb(0, 88, 4);
+}
+
+header {
+    background-color: var(--primary-color);
+    border-bottom: 1rem solid var(--secondary-color);
+    text-align: center;
+    color: white;
+    padding: 1rem;
+}
+
+#hero {
+    width: 100%;
+    border-bottom: 1rem solid var(--primary-color);
+}
+
+.card {
+    margin: 0 auto;
+    white-space: nowrap;
+    border-bottom: 1px solid var(--primary-color);
+    padding-bottom: 1rem;
+}
+
+#weather-icon {
+    display: block;
+    width: 75px;
+    margin: 0 auto;
+}
+
+.card h2 {
+    text-align: center;
+    padding: 0.5rem;
+    margin-top: 2rem;
+}
+
+.card div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+}
+
+.card strong {
+    display: block;
+    text-align: right;
+}
+
+footer {
+    background-color: var(--primary-color);
+    padding: 1rem;
+}
+
+footer p {
+    color:  white;
+    padding: 0.2rem;
+    text-align: center;
+}

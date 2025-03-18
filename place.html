@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Page - WDD 131</title>
+    <meta name="author" content="Giovaughni Padilla">
+    <meta name="description" content="Showcases a selected country or place with a responsive layout,images, and an interactive weather section using HTML, CSS, and JavaScript for accessibility and adaptability across different screen sizes.">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Peru</h1>
+    </header>
+    <main>
+        <picture>
+            <source srcset="images/peru-wide.webp" media="(min-width: 700px)">
+            <img src="images/peru-tall.webp" alt="Mount Timpanogos Utah Temple" id="hero">
+        </picture>
+        <section class="card" id="data">
+            <h2>Data</h2>
+            <div>
+                <p><strong>Area:</strong></p>
+                <p>1,285,216 km²</p>
+                <p><strong>Population:</strong></p>
+                <p>~34 million (as of 2024)</p>
+                <p><strong>Captal:</strong></p>
+                <p>Lima</p>
+                <p><strong>Languages:</strong></p>
+                <p>Spanish, Quechua</p>
+                <p><strong>Currency:</strong></p>
+                <p>Peruvian Sol (PEN)</p>
+                <p><strong>Time Zone:</strong></p>
+                <p>UTC -5</p>
+                <p><strong>Calling Code:</strong></p>
+                <p>+51</p>
+                <p><strong>Internet TLD:</strong></p>
+                <p>.pe</p>
+            </div>
+        </section>
+        <section class="card" id="weather">
+            <h2>Weather</h2>
+            <img src="images/weather.svg" alt="weather" id="weather-icon">
+            <div>
+                <p><strong>Temperature:</strong></p>
+                <p><span id="temperature"></span> °C</p>
+                <p><strong>Conditions:</strong></p>
+                <p>Mostly cloudy</p>
+                <p><strong>Wind:</strong></p>
+                <p><span id="wind-speed"></span> km/h</p>
+                <p><strong>Wind Chill:</strong></p>
+                <p><span id="wind-chill"></span> °C</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© <span id="currentYear"></span> || Giovaughni Padilla || Nebraska, United States</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
