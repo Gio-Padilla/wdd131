@@ -3,19 +3,8 @@ const temperatureData = 10;
 // In km/h
 const windSpeedData = 5;
 
-function calculateWindChill(temperature, windSpeed) {
-    // Check if wind chill calculation is valid
-    if (temperature > 10 || windSpeed <= 4.8) {
-        return "N/A";
-    }
-
-    // Apply the wind chill formula (Celsius & km/h)
-    let windChill = 13.12 + (0.6215 * temperature) 
-                   - (11.37 * Math.pow(windSpeed, 0.16)) 
-                   + (0.3965 * temperature * Math.pow(windSpeed, 0.16));
-
-    return windChill.toFixed(1); // Round to 1 decimal place
-}
+// Calculates windchill and will return "N/A" if it is not valid to calculate.
+function calculateWindChill(temperature, windSpeed) {if (temperature > 10 || windSpeed <= 4.8) {return "N/A";} return (13.12 + (0.6215 * temperature) - (11.37 * Math.pow(windSpeed, 0.16)) + (0.3965 * temperature * Math.pow(windSpeed, 0.16))).toFixed(1);}
 
 // It makes sure the page has loaded before it runs the code
 document.addEventListener("DOMContentLoaded", function () {
