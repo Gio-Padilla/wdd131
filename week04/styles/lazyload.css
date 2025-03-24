@@ -1,0 +1,47 @@
+* {
+	margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* This is for the varibles */
+    --primary-color: rgb(21, 65, 21);
+    --secondary-color: rgb(29, 29, 29);
+    --accent-color: rgb(127, 214, 101);
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+        background-color: black;
+    }
+    100% {
+        opacity: 1;
+        background-color: none;
+    }
+}
+
+img {
+    display: block;
+    animation: fade 4s;
+    margin: 1rem auto;
+}
+
+h1 {
+    text-align: center;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.5rem;
+}
+
+footer {
+    background-color: var(--primary-color);
+    padding: 1rem;
+}
+
+footer p {
+    color:  white;
+    padding: 0.2rem;
+    text-align: center;
+}
