@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Afacad Flux", sans-serif;
+}
+
+:root {
+    --primary-color: rgb(21, 65, 21);
+    --secondary-color: rgb(0, 12, 80);
+    --accent-color: rgb(127, 214, 101);
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* I had to mess arround with a few things and found that this creats a responsive layout even when the screen changes size without having to change this property */
+#gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+
+/* This is just some specifications in order to make sure the grid works */
+figure {
+    background-color: rgb(240, 255, 237);
+    border: 1px solid var(--primary-color);
+    justify-self: center;
+    max-width: 300px;
+    min-width: 200px;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+figure h3 {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 0.5rem;
+    border-radius: 1rem
+}
+
+figure p {
+    padding: 0.5rem;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    border: 1px solid var(--secondary-color);
+}
+
+#heading {
+    text-align: center;
+    color: black;
+    margin-bottom: 0.5rem;
+}
+
+#heading p {
+    font-size: small;
+}
+
+a {
+    text-decoration: none;
+    font-family: "Oswald", sans-serif;
+}
+
+header {
+    background-color: var(--primary-color);
+    padding: 1rem;
+    position: relative;
+}
+
+header h1 {
+    color: white;
+}
+
+footer {
+    margin-top: 1rem;
+    background-color: var(--primary-color);
+    padding: 1rem;
+}
+
+footer p {
+    color:  white;
+    padding: 0.2rem;
+    text-align: center;
+}
+
+.selected {
+    background-color: white;
+    color: var(--secondary-color);
+    border-radius: 1rem;
+}
+
+#menu-toggle {
+    display: block; /* Shows hamburger */
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+nav a {
+    color: white;
+    padding: 0.5rem 1rem;
+    background: none;
+}
+
+nav a:hover {
+    color: var(--accent-color);
+    background-color: var(--secondary-color);
+    border-radius: 1rem;
+}
+
+nav {
+    display: none; /* Hide navigation menu by default on small screens */
+    flex-direction: column;
+    position: absolute;
+    top: 4rem;
+    right: 1rem;
+    background-color: var(--primary-color);
+    width: 150px;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+/* Show menu when toggled */
+nav.show {
+    display: flex;
+}
+
+#menu-toggle.show:hover {
+    color: red;
+}
