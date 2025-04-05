@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review - WDD 131 - Giovaughni Padilla</title>
+    <meta name="description" content="A product review form page that contains good design.">
+    <meta name="author" content="Giovaughni Padilla">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- font-family: "Oswald", sans-serif; -->
+    <link href="https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="scripts/form.js" defer></script>
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form method="get" action="review.html" id="review">
+            <label>Product Name
+                <select name="f-select" id="f-select" required>
+                    <option value="" disabled selected>Select a Product ...</option>
+                </select>
+            </label>
+            <br>
+            <div>Overall Rating</div>
+            <div id="star-list">
+                <label>☆<br><input type="radio" name="f-rating" value="1" id="f-1-star" required></label>
+                <label>☆☆<br><input type="radio" name="f-rating" value="2" id="f-2-star" required></label>
+                <label>☆☆☆<br><input type="radio" name="f-rating" value="3" id="f-3-star" required></label>
+                <label>☆☆☆☆<br><input type="radio" name="f-rating" value="4" id="f-4-star" required></label>
+                <label>☆☆☆☆☆<br><input type="radio" name="f-rating" value="5" id="f-5-star" required></label>
+            </div>
+            <br>
+            <div>Which features did you find useful in the product?<br><i>(Check all that apply)</i></div>
+            <label class="align"><input type="checkbox" name="f-durability" id="f-durability" value="true"> Durability</label>
+            <label class="align"><input type="checkbox" name="f-use" id="f-use" value="true"> Ease of Use</label>
+            <label class="align"><input type="checkbox" name="f-performance" id="f-performance" value="true"> Performance</label>
+            <label class="align"><input type="checkbox" name="f-design" id="f-design" value="true"> Design</label>
+            <br>
+            <label>Date of Installation<input type="date" required name="f-date" id="f-date"></label>
+            <br>
+            <label>Written Review (Optional) <textarea name="f-written" id="f-written"></textarea></label>
+            <br>
+            <label>Your Name (Optional)<input type="text" name="f-name" id="f-name"></label>
+            <br>
+            <input type="submit" value="Post Review">
+        </form>
+    </main>
+    <footer>
+        <p>© <span id="currentYear"></span> || Giovaughni Padilla || Nebraska, United States</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+        <p id="reviewCount"></p>
+    </footer>
+</body>
+</html>

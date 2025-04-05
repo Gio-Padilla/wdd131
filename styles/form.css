@@ -1,0 +1,96 @@
+* {
+	margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+    font-family: "Oswald", sans-serif;
+}
+
+:root {
+    /* This is for the varibles */
+    --primary-color: rgb(21, 65, 21);
+    --secondary-color: rgb(29, 29, 29);
+    --accent-color: rgb(182, 206, 175);
+}
+
+
+body {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+#review {
+    padding: 1rem;
+    border: 1px solid var(--primary-color);
+    margin: 0.5rem;
+    border-radius: 1rem;
+    background-color: var(--accent-color);
+}
+
+#review select,
+#review input[type="date"],
+#review input[type="text"],
+#review textarea {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    padding: 0.5rem;
+}
+
+#review #star-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    text-align: center;
+    gap: 1rem;
+
+}
+
+#review input[type="radio"],
+#review input[type="checkbox"] {
+    width: 2rem;
+    height: 2rem;
+}
+
+#review input[type="checkbox"] {
+    margin-right: 0.5rem;
+}
+
+#review .align {
+    display: flex;
+    align-items: center; 
+    padding: 0;
+    margin: 0.5rem 0;
+}
+
+#review input[type="submit"] {
+    width: 100%;
+    border: none;
+    padding: 1rem;
+    background-image: linear-gradient(var(--primary-color), var(--secondary-color));
+    border-radius: 1rem;
+    color: white;
+    font-size: large;
+    cursor: pointer;
+}
+
+#review input[type="submit"]:hover {
+    background-image: none;
+    background-color: var(--secondary-color);
+}
+
+footer {
+    background-color: var(--primary-color);
+    padding: 1rem;
+}
+
+footer p {
+    color:  white;
+    padding: 0.2rem;
+    text-align: center;
+}
