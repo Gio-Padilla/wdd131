@@ -79,6 +79,11 @@ header {
     cursor: pointer;
 }
 
+#review .star {
+    font-weight: 900;
+    font-size: 1.2rem;
+}
+
 #review input[type="submit"]:hover {
     background-image: none;
     background-color: var(--secondary-color);

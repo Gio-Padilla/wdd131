@@ -81,9 +81,6 @@ reviewForm.addEventListener("submit", function (event) {
     
     // Update the review count displayed on the page
     updateReviewCount();
-    
-    // Optionally reset the form after submission (to clear inputs)
-    reviewForm.reset();
 });
   
 // Update the review count when the page is loaded
