@@ -45,7 +45,7 @@ header {
 
 #review #star-list {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(65px, 1fr)); /* Wraps the stars iff it gets too small */
     text-align: center;
     gap: 1rem;
 
