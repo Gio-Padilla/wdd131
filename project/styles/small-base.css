@@ -1,0 +1,38 @@
+@media screen and (max-width: 750px){
+    header nav {
+        display: none;
+        flex-flow: column;
+        text-align: center;
+        width: 100%;
+    }
+
+    header nav.show {
+        display: flex;
+    }
+
+    header button {
+        display: block;
+    }
+
+    header button.show::before {
+        content: "Close ";
+    }
+
+    header button.show {
+        background-image: linear-gradient(rgb(255, 94, 0), rgb(229, 255, 0));
+    }
+
+    .card-gallery {
+        grid-template-columns: 1fr;
+    }
+    
+}
+
+
+@media screen and (max-width: 500px){
+    .card-gallery img {
+        float: none;
+        display: block;
+        margin: 1rem auto;
+    }
+}
