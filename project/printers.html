@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Printer Core Insights - Possible Projects</title>
+    <meta name="description" content="A webpage that is based off of 3d printing and advertizes what 3d printers are, how 3d printers work, and examples of projects you can do with 3d printers.">
+    <meta name="author" content="Giovaughni Padilla">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- font-family: "Oswald", sans-serif; -->
+    <link href="https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- font-family: "Afacad Flux", sans-serif; -->
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/small-base.css">
+    <script src="scrpts/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="images/logo.svg" alt="logo" width="300" height="300">
+        <button type="button" id="menu-button">Menu</button>
+        <nav id="nav-menu">
+            <a href="index.html">Home</a>
+            <a href="possibilities.html">Possibilities</a>
+            <a href="printers.html" class="selected">3d Printers</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+    <main>
+        <div class="top-heading">
+            <h2>Different 3d Printers</h2>
+            <p>There are a lot of different types of 3d printers that can 3d print in differnt materials.</p>
+        </div>
+        <div class="card-gallery">
+            <div class="display-card">
+                <h3>FDM (Fused Deposition Modeling)</h3>
+                <img src="images/fdm-printer.webp" alt="FDM Printer" width="900" height="600" loading="lazy">
+                <p>FDM printers are the most widely used type of 3D printers, especially among beginners, hobbyists, and even professionals. They work by melting thermoplastic filament and extruding it layer by layer to form a 3D object. FDM machines are known for being affordable, easy to use, and compatible with a wide range of materials like PLA, ABS, and PETG. While they may not produce the highest level of detail compared to other types, they are excellent for functional parts, prototypes, and larger prints.</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Pros</th>
+                            <th>Cons</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-lable="Pros">Affordable and widely available</td>
+                            <td data-lable="Cons">Lower resolution and surface finish compared to resin printers</td>
+                        </tr>
+                        <tr>
+                            <td data-lable="Pros">Easy to use and maintain</td>
+                            <td data-lable="Cons">Susceptible to warping or layer shifting</td>
+                        </tr>
+                        <tr>
+                            <td data-lable="Pros">Works with many types of filament</td>
+                            <td data-lable="Cons">Visible layer lines</td>
+                        </tr>
+                        <tr>
+                            <td data-lable="Pros">Good for large models and structural parts</td>
+                            <td data-lable="Cons"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="display-card">
+                <h3>SLA (Stereolithography)</h3>
+                <img src="images/sla-printer.webp" alt="SLA Printer" width="900" height="600" loading="lazy">
+                <p>SLA printers use a UV laser to cure liquid resin into hardened plastic, layer by layer. They are known for producing extremely high-detail prints with smooth surfaces, making them ideal for jewelry, dental models, miniatures, and intricate prototypes. While SLA printers can be more expensive and messy due to resin handling, they are unmatched in print quality and fine detail.</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Pros</th>
+                            <th>Cons</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-lable="Pros">Exceptional detail and surface finish</td>
+                            <td data-lable="Cons">Resin can be messy and requires careful handling</td>
+                        </tr>
+                        <tr>
+                            <td data-lable="Pros">Great for miniatures and fine parts</td>
+                            <td data-lable="Cons">More expensive materials and maintenance</td>
+                        </tr>
+                        <tr>
+                            <td data-lable="Pros">Ideal for artistic and professional applications</td>
+                            <td data-lable="Cons">Typically smaller build volume than FDM</td>
+                        </tr>
+                        <tr>
+                            <td data-lable="Pros">Smooth surfaces, minimal post-processing</td>
+                            <td data-lable="Cons">Requires post-curing and cleaning</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="display-card">
+                <h3>SLS (Selective Laser Sintering)</h3>
+                <img src="images/sls-printer.webp" alt="SLS Printer" width="900" height="600" loading="lazy">
+                <p>SLS printers use a laser to fuse powdered materials, usually nylon, into solid structures. These printers are often used in industrial or advanced prototyping environments due to their strength and ability to produce complex, interlocking designs without support structures. SLS is great for mechanical parts, enclosures, and short-run manufacturing, but it's generally cost-prohibitive for casual users.</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Pros</th>
+                            <th>Cons</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-lable="Pros">Strong, functional parts with high durability</td>
+                            <td data-lable="Cons">Expensive equipment and materials</td>
+                        </tr>
+                        <tr>
+                            <td data-lable="Pros">No need for support structures</td>
+                            <td data-lable="Cons">Not beginner-friendly</td>
+                        </tr>
+                        <tr>
+                            <td data-lable="Pros">Excellent for complex geometries and mechanical parts</td>
+                            <td data-lable="Cons">Requires post-processing to remove excess powder</td>
+                        </tr>
+                        <tr>
+                            <td data-lable="Pros">Professional-grade results</td>
+                            <td data-lable="Cons">Large footprint and safety considerations</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="display-card">
+                <h3>DLP (Digital Light Processing)</h3>
+                <img src="images/dlp-printer.webp" alt="DLP Printer" width="900" height="600" loading="lazy">
+                <p>DLP printers are similar to SLA but use a digital projector screen to flash each entire layer at once, making them faster than SLA in some cases. They also use liquid resin and produce incredibly detailed prints. DLP printers are often used in dental, jewelry, and prototyping applications that demand speed and high resolution. Like SLA, they also require careful resin handling and post-processing.</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Pros</th>
+                            <th>Cons</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-lable="Pros">High-speed printing with excellent detail</td>
+                            <td data-lable="Cons">Smaller build volumes</td>
+                        </tr>
+                        <tr>
+                            <td data-lable="Pros">Great for small, precise models</td>
+                            <td data-lable="Cons">Requires post-processing and cleaning</td>
+                        </tr>
+                        <tr>
+                            <td data-lable="Pros">Consistent quality and accuracy</td>
+                            <td data-lable="Cons">Resin handling can be messy and hazardous</td>
+                        </tr>
+                        <tr>
+                            <td data-lable="Pros">Smooth surfaces and sharp edges</td>
+                            <td data-lable="Cons">Limited to resin-compatible projects</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>© <span id="currentYear"></span> || Giovaughni Padilla || Nebraska, United States</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+
+</body>
+</html>
