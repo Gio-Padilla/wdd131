@@ -196,6 +196,7 @@ table td:empty::after {
 
 #contact-form fieldset {
     border-radius: 1rem;
+    border: 1px solid black;
 }
 
 #contact-form input[type="radio"],
