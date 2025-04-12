@@ -1,0 +1,90 @@
+* {
+	margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+    font-family: "Afacad Flux", sans-serif;
+}
+
+:root {
+    /* This is for the varibles */
+    --primary-color: rgb(21, 65, 21);
+    --secondary-color: rgb(8, 0, 53);
+    --accent-color: rgb(213, 255, 198);
+    --accent2-color: rgb(242, 242, 255);
+}
+
+header {
+    padding: 1rem 2rem;
+    background-color: black;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+main {
+    display: grid;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.card {
+    display: grid;
+    margin: 0 1rem;
+    border: 3px solid black;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: rgb(240, 240, 240);
+}
+
+.card h2 {
+    border-bottom: 3px solid black;
+    padding: 0 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.primary-color {
+    color: white;
+    background-color: var(--primary-color);
+    padding: 1rem;
+    margin: 0.2rem;
+}
+
+.secondary-color {
+    color: white;
+    background-color: var(--secondary-color);
+    padding: 1rem;
+    margin: 0.2rem;
+}
+
+.accent-color {
+    color: black;
+    background-color: var(--accent-color);
+    padding: 1rem;
+    margin: 0.2rem;
+}
+
+.accent2-color {
+    color: black;
+    background-color: var(--accent2-color);
+    padding: 1rem;
+    margin: 0.2rem;
+}
+
+.bottom-space {
+    margin-bottom: 1rem;
+}
+
+.screen-size {
+    display: flex;
+    gap: 1rem;
+}
+
+.screen-size div {
+    padding: 0.5rem;
+    border: 3px solid rgb(133, 133, 133);
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 2rem;
+}
