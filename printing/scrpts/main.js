@@ -77,7 +77,7 @@ const usesList = [
     
 ];
 
-
+// For each item in the list, will create a card
 const posLocation = document.getElementById("uses-list");
 if (posLocation) {
     usesList.forEach(theUse => {
@@ -89,6 +89,7 @@ function createUseCard(theCard) {
     // Creating all of the elements
     const cardDiv = document.createElement("div");
     cardDiv.classList.add("display-card");
+    cardDiv.classList.add("can-favorite");
     const cardHead = document.createElement("h3");
     cardHead.textContent = theCard.title;
     const cardImg = document.createElement("img");
@@ -99,10 +100,31 @@ function createUseCard(theCard) {
     cardImg.loading = "lazy";
     const cardDesc = document.createElement("p");
     cardDesc.textContent = theCard.description;
+    // Header Favorite
+    setupFavoriteBehavior(cardHead, theCard);
     // Combining all of the elements
     cardDiv.append(cardHead);
     cardDiv.append(cardImg);
     cardDiv.append(cardDesc);
-    // Returning the fill card
+    // Returning the filled card
     return cardDiv
+}
+
+// (This one was more complicated so I added notes to each part)
+function setupFavoriteBehavior(cardHead, theCard) {
+    cardHead.addEventListener("click", function () {
+        cardHead.classList.toggle("favorited"); //Add the event so that if it is clicked, it will add the class "favorited"
+        let favorites = JSON.parse(localStorage.getItem("favorites")) || []; // Pulls localStorage favorites and converts it to a string, but if string is not found then creates a blank list
+        if (favorites.includes(theCard.title)) { //Checks if the title is in the list
+            favorites = favorites.filter(item => item !== theCard.title); //If it is in the list then removes it from the list
+        } else {
+            favorites.push(theCard.title); // If it is not in the list, then it will add it to the list
+        }
+        localStorage.setItem("favorites", JSON.stringify(favorites)); // Converts the new list to a string and sets it back to localStorage
+    });
+    //Load from localStorage if already in it
+    const savedFavorites = JSON.parse(localStorage.getItem("favorites")) || [];
+    if (savedFavorites.includes(theCard.title)) {
+        cardHead.classList.add("favorited");
+    }
 }

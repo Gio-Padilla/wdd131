@@ -191,7 +191,7 @@ header .selected {
     border: 3px solid var(--primary-color);
 }
 
-/* --------------------- CSS --------------------- */
+/* --------------------- top-heading CSS --------------------- */
 
 .top-heading {
     text-align: center;
@@ -201,6 +201,10 @@ header .selected {
 
 .top-heading h2 {
     text-decoration: underline;
+}
+
+.top-heading p i {
+    background-color: rgba(255, 255, 0, 0.2);
 }
 
 /* --------------------- Card CSS --------------------- */
@@ -240,6 +244,24 @@ header .selected {
     padding: 1rem;
     font-family: "Afacad Flux", sans-serif;
     font-size: larger;
+}
+
+/* --------------------- Card Favorites CSS --------------------- */
+
+.can-favorite h3:hover {
+    background-color: var(--primary-color);
+}
+
+.can-favorite h3.favorited {
+    color: orange;
+}
+
+.can-favorite h3.favorited::after {
+    content: " ★★";
+}
+
+.can-favorite h3.favorited::before {
+    content: "★★ ";
 }
 
 /* --------------------- Card Table CSS --------------------- */
